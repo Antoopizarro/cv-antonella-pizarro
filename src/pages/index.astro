@@ -1,0 +1,33 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Experience from '@/components/sections/Experience.astro';
+import About from '@/components/sections/About.astro';
+import Proyects from '@/components/sections/Proyects.astro';
+import Education from '@/components/sections/Education.astro';
+import Hero from '@/components/sections/Hero.astro';
+import Skills from '@/components/sections/Skills.astro';
+import KeyboardManager from '@/components/KeyboardManager.astro';
+---
+
+<Layout title="CV Antonella Pizarro">
+	<main>	
+		<Hero />
+		<About />
+		<Education />
+		<Skills />
+		<Experience />
+		<Proyects />
+
+	</main>
+	<KeyboardManager />
+</Layout>
+
+<style>
+	main{
+		padding: 4rem;
+		margin: auto;
+		width: 100%;
+		background-image: url('../../public/img/fondo.jpg');
+	}
+	
+</style>
