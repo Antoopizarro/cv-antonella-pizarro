@@ -1,5 +1,7 @@
 ---
 import {basics} from '@cv';
+
+import Date from '@/icons/Date.astro';
 import Section from '@/components/Section.astro';
 import Mail from '@/icons/Mail.astro';
 import Phone from '@/icons/Phone.astro';
@@ -31,6 +33,10 @@ const printInfo = [email, phone, linkedinUrl].filter(Boolean).join(', ');
         <span>
             <WordlMap />
             {city} {region}
+        </span>
+        <span>
+            <Date />
+            14/11/2002
         </span>
         <footer>
             <div class="print">
