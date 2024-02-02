@@ -16,6 +16,11 @@ const SOCIAL_ICONS: Record<string, any> = {
     LinkedIn,
     Behance
 }
+
+const linkedinInfo = profiles.find((profile) => profile.network === 'LinkedIn');
+const linkedinUrl = linkedinInfo?.url;
+const printInfo = [email, phone, linkedinUrl].filter(Boolean).join(', ');
+
 ---
 
 <Section>
@@ -28,6 +33,11 @@ const SOCIAL_ICONS: Record<string, any> = {
             {city} {region}
         </span>
         <footer>
+            <div class="print">
+                {printInfo}
+            </div>
+            </footer>
+            <footer class="no-print">
             {
                 email && (
                     <a href={`mailto:${email}`}
@@ -49,7 +59,7 @@ const SOCIAL_ICONS: Record<string, any> = {
                 )
             }
             {
-               profiles.map(({ network, url, username }) =>{
+               profiles.map(({ network, url }) =>{
                 const Icon = SOCIAL_ICONS[network]
 
                 return (
@@ -119,6 +129,8 @@ const SOCIAL_ICONS: Record<string, any> = {
 
     }
     footer{
+        color: #BDA0BC;
+        font-size: 0.60rem;
         display: flex;
         gap: 4px;
         margin-top: 8px;
