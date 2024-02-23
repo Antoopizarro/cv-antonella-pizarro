@@ -82,7 +82,7 @@ const printInfo = [email, phone, linkedinUrl].filter(Boolean).join(', ');
         </footer>
         
     </div>
-    <figure>
+    <figure class="figureImg">
         <img src={image} alt={name}>
     </figure>
 
@@ -103,6 +103,12 @@ const printInfo = [email, phone, linkedinUrl].filter(Boolean).join(', ');
         gap: 0.5rem;
         padding-right: 32px;
     }
+
+    .figureImg{
+        border: 1px solid #BDA0BC;
+    
+        border-radius: 50%;
+    }
     h1{
         font-size: 1.5rem;
         color: #7B4B94
@@ -113,19 +119,16 @@ const printInfo = [email, phone, linkedinUrl].filter(Boolean).join(', ');
         font-size: 1.1rem;
         text-wrap: balance;
     }
-    img{
-        
+    img{ 
         object-fit: cover;
         width: 150px;
         border-radius: 50%;
-        background-color: #BDA0BC;
+        padding: 5px;
  
     }
 
-    :hover img {-webkit-transform:scale(1.3);transform:scale(1.3);}{{overflow:hidden;}}
-    /* img:hover {
-        filter: opacity(.5);
-    } */
+    :hover figure {-webkit-transform:scale(1.3);transform:scale(1.3);transition: 300ms;}{{overflow:hidden;}}
+
     span{
         color: #666;
         display: flex;
@@ -158,4 +161,23 @@ const printInfo = [email, phone, linkedinUrl].filter(Boolean).join(', ');
         /* background: #ddd; */
         border: 1px solid #7B4B94;
     }
+
+
+    @media (width <= 500px) {
+		h1{
+            font-size: 1.1rem;
+        }
+    span{
+        font-size: 1rem;
+    }
+    img{
+        width: 80px;
+    }
+    .info{
+        padding: 0;
+       
+    }
+
+}
+  
 </style>

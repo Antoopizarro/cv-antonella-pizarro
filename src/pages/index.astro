@@ -27,13 +27,19 @@ const { name , label } = basics;
 </Layout>
 
 <style>
-	main{
+	main{ 
 		padding: 4rem;
 		margin: auto;
 		width: 100%;
 		background-image: url('../../public/img/fondo.jpg');
 		background-size: cover;
 		background-repeat: no-repeat;
+	}
+
+	@media (width <= 500px){
+		main{
+			padding: 20px;
+		}
 	}
 	
 </style>
