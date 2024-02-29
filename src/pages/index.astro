@@ -1,46 +1,58 @@
 ---
-import Layout from '@/layouts/Layout.astro';
+import Layout from "@/layouts/Layout.astro";
 
-import Experience from '@/components/sections/Experience.astro';
-import About from '@/components/sections/About.astro';
-import Proyects from '@/components/sections/Proyects.astro';
-import Education from '@/components/sections/Education.astro';
-import Hero from '@/components/sections/Hero.astro';
-import Skills from '@/components/sections/Skills.astro';
-import KeyboardManager from '@/components/KeyboardManager.astro';
+import Experience from "@/components/sections/Experience.astro";
+import About from "@/components/sections/About.astro";
+import Proyects from "@/components/sections/Proyects.astro";
+import Education from "@/components/sections/Education.astro";
+import Hero from "@/components/sections/Hero.astro";
+import Skills from "@/components/sections/Skills.astro";
+import KeyboardManager from "@/components/KeyboardManager.astro";
+import Languages from "@/components/sections/Languages.astro";
+import ThemeIcon from "@/components/sections/ThemeIcon.astro";
 
-import { basics } from '@cv';
-const { name , label } = basics;
+import { basics } from "@cv";
+const { name, label } = basics;
+
 ---
 
 <Layout title={`Portafolio de ${name}-${label}`}>
-	<main>	
+	<main id="main">
+		<!-- <ThemeIcon /> -->
 		<Hero />
 		<About />
 		<Education />
+		<Languages />
 		<Skills />
 		<Experience />
 		<Proyects />
-		<!-- <Proyects /> -->
 
 	</main>
 	<KeyboardManager />
 </Layout>
 
 <style>
-	main{ 
+	/* .dark {
+		background-color: #0d0950;
+		color: #fff;
+	}
+
+	.dark .nav-links a {
+		color: #fff;
+	} */
+	main {
 		padding: 4rem;
 		margin: auto;
 		width: 100%;
-		background-image: url('../../public/img/fondo.jpg');
+		background-image: url("../../public/img/fondo.jpg");
 		background-size: cover;
 		background-repeat: no-repeat;
 	}
 
-	@media (width <= 500px){
-		main{
+	@media (width <= 500px) {
+		main {
 			padding: 20px;
 		}
 	}
-	
 </style>
+
