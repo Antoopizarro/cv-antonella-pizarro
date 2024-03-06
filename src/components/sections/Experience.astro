@@ -48,18 +48,6 @@ import { work } from "@cv";
     margin-top: 60px;
   }
 
-  /*.cv:hover::after {
-    content: "";
-    width: 100%;
-    height: 100%;
-    background: #bda0bc;
-    position: absolute;
-    z-index: 0;
-    top: 0;
-    left: 0;
-    transition: 0.4s ease-in-out all;
-    border-radius: 0px 0px 300px 300px;
-  }*/
   .cv {
     color: #bda0bc;
     display: inline-flex;
@@ -104,12 +92,19 @@ import { work } from "@cv";
     justify-content: space-between;
     align-items: flex-start;
     margin-bottom: 4px;
+    position: relative;
+    z-index: 9999;
   }
 
   time {
     color: #555;
     font-size: 1.5rem;
     min-width: 102px;
+  }
+
+  footer{
+    position: relative;
+    z-index: 9999;
   }
 
   @media (width <= 700px) {

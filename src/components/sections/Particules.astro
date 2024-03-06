@@ -1,0 +1,192 @@
+---
+import Section from "@/components/Section.astro";
+---
+
+<Section>
+<div class="divParticules">
+    <div class="conteinerParticules">
+        <div class="particules">
+			<span id="span" style="--i:11;"></span>
+			
+			
+            <span id="span" style="--i:23;"></span>
+
+			<span id="span" style="--i:16;"></span>
+            
+           
+            <span id="span" style="--i:22;"></span>
+            <span id="span" style="--i:25;"></span>
+       
+            <span id="span" style="--i:21;"></span>
+			
+			<span style="--i:15;"></span>
+			<span style="--i:11;"></span>
+			
+			
+            <span style="--i:23;"></span>
+
+			<span style="--i:16;"></span>
+            
+           
+            <span style="--i:22;"></span>
+            <span style="--i:25;"></span>
+       
+            <span style="--i:21;"></span>
+			
+			<span style="--i:15;"></span>
+			<span style="--i:11;"></span>
+			
+			
+            <span style="--i:23;"></span>
+
+			<span style="--i:16;"></span>
+            
+           
+            <span style="--i:22;"></span>
+            <span style="--i:25;"></span>
+       
+            <span style="--i:21;"></span>
+			
+			<span style="--i:15;"></span>
+			<span style="--i:11;"></span>
+			
+			
+            <span style="--i:23;"></span>
+
+			<span style="--i:16;"></span>
+            
+           
+            <span style="--i:22;"></span>
+            <span style="--i:25;"></span>
+       
+            <span style="--i:21;"></span>
+			
+			<span style="--i:15;"></span>
+			<span style="--i:11;"></span>
+			
+			
+            <span style="--i:23;"></span>
+
+			<span style="--i:16;"></span>
+            
+           
+            <span style="--i:22;"></span>
+            <span style="--i:25;"></span>
+       
+            <span style="--i:21;"></span>
+			
+			<span style="--i:15;"></span>
+			<span style="--i:11;"></span>
+			
+			
+            <span style="--i:23;"></span>
+
+			<span style="--i:16;"></span>
+            
+           
+            <span style="--i:22;"></span>
+            <span style="--i:25;"></span>
+       
+            <span style="--i:21;"></span>
+			
+			<span style="--i:15;"></span>
+        
+        
+
+        
+		
+			
+			<!-- <span style="--i:11;"></span>
+			<span style="--i:12;"></span>
+			<span style="--i:24;"></span>
+			<span style="--i:10;"></span>
+            <span style="--i:10;"></span>
+			<span style="--i:14;"></span>
+            <span style="--i:23;"></span>
+            <span style="--i:18;"></span>
+			<span style="--i:16;"></span>
+            <span style="--i:19;"></span>
+            <span style="--i:20;"></span>
+            <span style="--i:22;"></span>
+            <span style="--i:25;"></span>
+            <span style="--i:18;"></span>
+            <span style="--i:21;"></span>
+			<span style="--i:13;"></span>
+			<span style="--i:15;"></span>
+            <span style="--i:26;"></span>
+            <span style="--i:17;"></span>
+			<span style="--i:13;"></span>
+			<span style="--i:28;"></span> -->
+           
+        </div>
+    </div>
+</div>
+</Section>
+
+<style>
+
+	.active{
+		display: none !important;
+	}
+
+     .divParticules{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 100%;	
+		position: fixed;
+		top: 0;
+		left: 0;
+	}
+
+	.conteinerParticules{
+		position: relative;
+		width: fit-content;
+		height: 100vh;
+		overflow: hidden;
+	
+	}
+
+	.particules{
+		position: relative;
+		display: flex;
+		z-index: 1;
+		padding: 0 20px;
+	}
+
+	.particules span{
+		position: relative;
+		bottom: 30px;
+		width: 30px ;
+		height: 30px;
+		background: #bda0bc;
+		box-shadow: 0 0 0 10px #b998b844,
+		0 0 50px #bda0bc,
+		-100px 0 #e2d1e199,
+		100px 0 #bda0bc;
+		margin: 0 4px;
+		border-radius: 50%;
+		animation: animate 10s ease-in-out infinite;
+		animation-duration: calc(250s / var(--i));
+	}
+
+	.particules span:nth-child(even){
+		background: #caabda;
+		box-shadow: 0 0 0 10px #bf84de44,
+		0 0 50px #8b4aae,
+		-100px 0 #bd9bcf99,
+		100px 0 #a18bad;
+	}
+	
+	@keyframes animate{
+		0%{
+			transform: scale(0) translateY(120vh) rotate(90deg);
+		}
+		20%{
+			transform: scale(1) translateY(100vh) rotate(0deg);
+		}
+		100%{
+			transform: scale(0.5) translateY(-50px) rotate(360deg);
+		}
+	}
+</style>

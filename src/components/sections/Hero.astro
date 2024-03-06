@@ -97,22 +97,24 @@ const printInfo = [email, phone, linkedinUrl].filter(Boolean).join(', ');
         align-items: center;
         /* justify-content: space-between; */
         gap: 1rem;
+        position: relative;
     }
     .info{
         display: flex;
         flex-direction: column;
         gap: 0.5rem;
         padding-right: 32px;
+        
     }
 
     .figureImg{
         border: 1px solid #BDA0BC;
-    
+        z-index: 9999;
         border-radius: 50%;
     }
     h1{
         font-size: 1.5rem;
-        color: #7B4B94
+        color: #7B4B94;
     }
     h2{
         color: #444;
@@ -137,7 +139,6 @@ const printInfo = [email, phone, linkedinUrl].filter(Boolean).join(', ');
         gap: .25rem;
         font-size: 1.5rem;
         letter-spacing: -0.05rem;
-
     }
     footer{
         color: #BDA0BC;
@@ -145,6 +146,7 @@ const printInfo = [email, phone, linkedinUrl].filter(Boolean).join(', ');
         display: flex;
         gap: 4px;
         margin-top: 8px;
+        z-index: 9999;
     }
     footer a{
         color: #BDA0BC;

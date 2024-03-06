@@ -10,6 +10,7 @@ import Section from "@/components/Section.astro";
       <input type="radio" name="Carrusel" id="Slider2" />
       <input type="radio" name="Carrusel" id="Slider3" />
 
+
       <div class="Carrusels">
         <!-- Imagen contenido -->
         <div
@@ -32,6 +33,7 @@ import Section from "@/components/Section.astro";
         <label for="Slider3" class="ArrowLeft Arrow1">❮</label>
         <label for="Slider1" class="ArrowLeft Arrow2">❮</label>
         <label for="Slider2" class="ArrowLeft Arrow3">❮</label>
+  
       
 
         <!-- Flechas a la derecha por cada imagen -->
@@ -58,6 +60,7 @@ import Section from "@/components/Section.astro";
 
 <style>
   .spanCv {
+    z-index: 9999;
     display: flex;
     justify-content: center;
     position: relative;
@@ -102,6 +105,8 @@ import Section from "@/components/Section.astro";
 
   /* Contenedor para centrar */
   .ContainerCenter {
+    position: relative;
+    z-index: 9999;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -194,6 +199,7 @@ import Section from "@/components/Section.astro";
     width: 60px;
     padding: 15px;
     display: flex;
+    gap: 2px;
     justify-content: space-between;
   }
   .Selectors .Selector {

@@ -9,16 +9,16 @@ import Hero from "@/components/sections/Hero.astro";
 import Skills from "@/components/sections/Skills.astro";
 import KeyboardManager from "@/components/KeyboardManager.astro";
 import Languages from "@/components/sections/Languages.astro";
-
+import Particules from "@/components/sections/Particules.astro";
+import Power from "@/icons/Power.astro";
 
 import { basics } from "@cv";
 const { name, label } = basics;
-
 ---
 
 <Layout title={`Portafolio de ${name}-${label}`}>
 	<main id="main">
-		<!-- <ThemeIcon /> -->
+		<Power />
 		<Hero />
 		<About />
 		<Education />
@@ -26,20 +26,13 @@ const { name, label } = basics;
 		<Skills />
 		<Experience />
 		<Proyects />
-
+		
 	</main>
+	<Particules />
 	<KeyboardManager />
 </Layout>
 
 <style>
-	/* .dark {
-		background-color: #0d0950;
-		color: #fff;
-	}
-
-	.dark .nav-links a {
-		color: #fff;
-	} */
 	main {
 		padding: 4rem;
 		margin: auto;
@@ -47,7 +40,11 @@ const { name, label } = basics;
 		background-image: url("../../public/img/fondo.jpg");
 		background-size: cover;
 		background-repeat: no-repeat;
+		overflow: hidden;
+		position: relative;
+		
 	}
+
 
 	@media (width <= 500px) {
 		main {
@@ -55,4 +52,3 @@ const { name, label } = basics;
 		}
 	}
 </style>
-
