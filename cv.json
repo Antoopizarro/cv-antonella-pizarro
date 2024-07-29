@@ -38,8 +38,19 @@
         "position": "Desarrolladora FrontEnd",
         "url": "",
         "startDate": "2023-10",
+        "endDate": "2024",
+        "summary": "Desarrollo de sistema de gestión para usuarios. Desarrollando desde la parte Front-End.",
+        "highlights": [
+          "Started the company"
+        ]
+      },
+      {
+        "name": "Estación R",
+        "position": "Desarrolladora FrontEnd",
+        "url": "",
+        "startDate": "2024-10",
         "endDate": null,
-        "summary": "Desarrollo de sistema de gestión para pacientes, usuarios y turnos para una clínica de Kinesiología. Desarrollando desde la parte Front-End.",
+        "summary": "Desarrollo web para una institución educativa.",
         "highlights": [
           "Started the company"
         ]
@@ -61,14 +72,14 @@
       "url": "",
       "area": "Diseño UX UI",
       "studyType": "Bachelor",
-      "startDate": "2025",
-      "endDate": null
+      "startDate": "2024",
+      "endDate": "2024"
     },{
       "institution": "Escuela Da Vinci",
       "url": "",
       "area": "Diseño Gráfico Artístico Digital",
       "studyType": "Bachelor",
-      "startDate": "2024",
+      "startDate": "2023",
       "endDate": null,
       "score": "4.0",
       "courses": [
@@ -79,15 +90,15 @@
       "url": "",
       "area": "Programación Web Full-Stack",
       "studyType": "Bachelor",
-      "startDate": "2023",
-      "endDate": "2024"
+      "startDate": "2022",
+      "endDate": "2023"
     },{
       "institution": "Instituto Nuestra Señora de la Asunción",
       "url": "",
       "area": "Primario-Secundario",
       "studyType": "Bachelor",
-      "startDate": "2006",
-      "endDate": "2021"
+      "startDate": "2005",
+      "endDate": "2020"
     }],
     "awards": [{
       "title": "Award",
@@ -145,13 +156,6 @@
         ]
       },
       {
-        "name": "Node",
-        "level": "Avanzado",
-        "keywords": [
-          "Desarrollo Web", "Backend", "JavaScript", "Servidor"
-        ]
-      },
-      {
         "name": "MySQL",
         "level": "Avanzado",
         "keywords": [
@@ -196,6 +200,13 @@
       {
         "name": "Adobe Photoshop",
         "level": "Básico",
+        "keywords": [
+          "Desarrollo Web", "Frontend", "Diseño Gráfico"
+        ]
+      },
+      {
+        "name": "Adobe InDesign",
+        "level": "Avanzado",
         "keywords": [
           "Desarrollo Web", "Frontend", "Diseño Gráfico"
         ]
